@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 375px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(./components/assets/mobile.png);
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+
+/* Left Side */
+.leftSide {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-block: 30px;
+  gap: 15px;
+}
+
+.left-header {
+  color: #fff;
+}
+
+.left-text {
+color: #Fff;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+width: 327px;
+}
+/* End of Left Side */
+
+
+/* Right Side */
+.rightHeader {
+  background-color: #5E54A4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 8px 0px 0px #00000025;
+  flex-direction: column;
+}
+
+.right-top {
+font-size: 15px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0.2678571045398712px;
+text-align: center;
+}
+
+.right-text {
+font-size: 15px;
+line-height: 26px;
+letter-spacing: 0.2678571045398712px;
+text-align: center;
+}
+
+.RightFooter {
+  display: flex;
+  text-align: center;
+  width: 249px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+strong {
+  color: red;
+}
+/* End of Right Side */
+
+.inputHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 0px 0px #00000025;
+  margin-top: 24px;
+}
+
+.inputForm {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding-block: 15px;
+}
+
+.inputHolder > form > div > input{
+  width: 279px;
+  height: 56px;
+  border-radius: 4px;
+  border: 1px solid #DEDEDE;
+}
+
+.freeTrial {
+  background-color: #38CC8B;
+  color: #fff;
+  width: 279px;
+  height: 56px;
+  border: 0;
+  box-shadow: 0px -4px 0px 0px #00000017 inset;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    width: auto; 
+    height: 100vh;
+    background-image: url(./components/assets/desktop.png);
+    background-size: 1920px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+
+  .inputHolder {
+    width: 540px;
+    height: 474px;
+    margin-top: 145px;
+  }
+
+  .leftSide {
+    align-items: normal;
+    text-align: initial;
+  }
+
+  .SideWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inputHolder > form > div > input {
+    width: 460px;
+  }
+
+  .freeTrial {
+    width: 460px;
+  }
+
+  .RightFooter {
+    width: 387px;
+  }
+
+  .inputForm {
+    align-items: center;
+  }
+
+  .left-header {
+    width: 525px;
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  .left-text {
+    width: 525px;
+  }
+
+  .rightHeader {
+    position: relative;
+    top: 120px;
+  }
+}
